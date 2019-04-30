@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+/** ## CSS Reset & Basic settings --------------------------------------------*/
+* {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    background: #f7f7f7;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2 {
+    color: #333333;
+    margin: 160px 0 65px 0;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #333333;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/** HTML5 tags support for older browsers */
+header, section,
+footer, aside,
+nav, main,
+article, figure {display: block;}
+
+section {margin: 0 auto;}
+section:first-of-type {margin: 0;}
+h1, h2.hide {display: none;}
+
+/** ## Header ----------------------------------------------------------------*/
+header {
+    background: url("../img/bg_head.png") no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: auto;
+    max-width: 1920px;
+    min-height: 1030px;
+    position: relative;
+}
+
+nav {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/** Logo */
+nav:before {
+    background: url("../img/logo.png");
+    content: '';
+    height: 61px;
+    position: absolute;
+    left: 120px;
+    top: 35px;
+    width: 166px;
+}
+
+nav ul {
+    float: right;
+    padding: 55px 80px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 40px 0 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #bdd7fa;
+    transition: 0.3s ease-in-out color;
+}
+
+#header-message {
+    color: #fefefe;
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    left: 330px;
+    position: absolute;
+    top: 55%;
+    width: 650px;
+}
+
+#header-message span.header-button a {
+    background: #ff690f;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    padding: 15px 46px;
+    text-decoration: none;
+}
+
+#header-message span.header-button a:hover {
+    background: #fd7c2f;
+    transition: 0.3s ease-in-out background-color;
+}
+
+#header-message span {display: block;}
+#header-message span.header-button {margin: 50px 0 0 0;}
+
+/** ## Section => WHAT WE OFFER ----------------------------------------------*/
+section#what-we-offer {
+    margin: 0 auto 145px auto;
+    width: 1100px;
+}
+
+section#what-we-offer .introduction {
+    color: #565656;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 80px;
+    text-align: center;
+}
+.offer-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 45px 0 45px;
+}
+.offer-box {
+    display: inline-block;
+    text-align: center;
+}
+
+.offer-box img {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.question {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.offer-boxes h3 {
+    line-height: 30px;
+    padding: 15px 50px 30px 50px;
+}
+
+.offer-box a.price-point {
+    background: #ff690f;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px
+}
+
+.offer-box a.price-point:hover {
+    background: #fd7c2f;
+    transition: 0.3s ease-in-out background-color;
+}
+
+.offer-box span {display: block;}
+
+/** ## Section => IMAGE GALLERY ----------------------------------------------*/
+section#gallery {
+    column-count: 3;
+    column-gap: 0;
+    line-height: 0;
+    margin: 0 auto;
+    -moz-column-count: 3;
+    -moz-column-gap: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0;
+    text-align: center;
+    width: 100%;
+}
+
+section#gallery img {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    width: auto;
+}
+
+/** ## Section => MEET OUR CREW ----------------------------------------------*/
+section#meet-our-crew {
+    margin: 0 auto 145px auto;
+    width: 1270px;
+}
+
+.crew-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+.crew-box {
+    display: inline-block;
+    text-align: center;
+}
+
+.crew-box img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+img.mask {
+    height: 240px;
+    width: 240px;
+}
+
+.profession {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.crew-box span {display: block;}
+section#meet-our-crew h2 {margin: 135px 0 35px 0;}
+
+/** ## Section => ABOUT ------------------------------------------------------*/
+section#about {
+    background: url("../img/bg_about.png") no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: auto;
+    min-height: 1080px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+section#about h2 {
+    color: #2f2f2f;
+    line-height: 70px;
+    margin: 0;
+    padding: 0 0 40px 0;
+    text-align: left;
+}
+
+section#about #about-pad p {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0 0 15px 0;
+}
+
+section#about td.about-number {
+    color: #ff690f;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+section#about td.about-caption {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 110px 0 0;
+    text-transform: uppercase;
+}
+
+section#about table {border: none;}
+section#about td.about-caption:last-of-type {padding: 0;}
+section#about #about-pad {padding: 230px 40% 0 16%;}
+
+/** ## Section => TESTIMONIALS -----------------------------------------------*/
+section#testimonials {
+    height: 748px;
+    width: 825px;
+}
+
+section#testimonials h2 {
+    margin: 0;
+    padding: 160px 0 31px 0;
+}
+
+section#testimonials h3 {
+    font-size: 18px;
+    margin: 16px 0 20px 0;
+}
+
+section#testimonials img {
+    border-radius: 50%;
+    display: block;
+    height: 130px;
+    margin: 0 auto;
+    width: 130px;
+}
+
+section#testimonials .client-photo:before {
+    background: url("../img/quote_left.png");
+    content: '';
+    height: 36px;
+    left: 290px;
+    position: absolute;
+    top: 107px;
+    width: 50px;
+}
+
+section#testimonials .client-photo:after {
+    background: url("../img/quote_right.png");
+    content: '';
+    height: 36px;
+    position: absolute;
+    right: 290px;
+    top: 107px;
+    width: 50px;
+}
+
+section#testimonials p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+}
+
+section#testimonials .slide {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+ul.sy-pager li {
+    width: 13px;
+    height: 13px;
+    background: #d1d8df;
+    border-radius: 50%;
+    margin: 0 18px 0 0;
+    display: inline-block;
+}
+
+ul.sy-pager {
+    display: block;
+    margin: 45px auto 0 auto;
+    text-align: center;
+}
+
+ul.sy-pager li a {
+    color: transparent;
+    font-size: 29px;
+    line-height: 8px;
+    position: relative;
+}
+
+/** Slider */
+.testimonials-slider {position: relative;}
+ul.sy-pager li.sy-active {background: #ff630b;}
+ul.sy-pager li:last-of-type {margin: 0;}
+
+/** ## Footer ----------------------------------------------------------------*/
+footer {
+    background: #2f2f2f;
+    height: 639px;
+}
+
+footer #contact-us {
+    display: inline-block;
+    width: 33%;
+}
+
+footer #map {
+    display: inline-block;
+    float: right;
+    height: 639px;
+    width: 67%;
+}
+
+footer #contact-us h2 {
+    color: #ffffff;
+    margin: 76px 0 25px 0;
+    text-align: left;
+    transform: translate(-10px, 0);
+}
+
+footer .address span {
+    color: #f7f7f7;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+/* Font Awesome */
+footer .address i.fas {
+    color: #ff600a;
+    float: left;
+    height: 39px;
+    padding: 0 16px 0 0;
+    transform: translate(0, 5px);
+}
+
+footer ul.social li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 35px 0 0;
+}
+
+footer ul.social li a {
+    color: #979797;
+    font-size: 30px;
+}
+
+footer ul.social li a:hover {
+    color: #777777;
+    transition: 0.3s ease-in-out;
+}
+
+footer #contact-us .contact-pad {padding: 0 0 0 137px;}
+footer ul.social li:last-of-type {padding: 0;}
+footer .address i.fa-phone-volume {font-size: 20px;}
+footer ul.social {padding: 37px 0 0 0;}
+
+
+
+
+
+
+
+
+
+
+/** Galerie responzivita
+přidat načítání s javascriptem
+ počítadla javascriptem */
+/*!!! MEDIA Q - stín  */
