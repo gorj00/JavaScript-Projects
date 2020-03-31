@@ -1,5 +1,4 @@
 # [#1 Project - Movie Quiz](./Movie%20Quiz%20(external%20REST%20API))
-**[[LIVE DEMO](http://tviix.com/workspace/jsapp/)]**
 
 My very first JavaScript web app. 
 
